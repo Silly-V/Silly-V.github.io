@@ -65,7 +65,8 @@
 			});
 
 			setTimeout(function(){
-				$("#loader-zone").css({"opacity" : 0});}
+				
+				$("#loader-zone").css({"opacity" : 0});
 				   
 				if(navigator.userAgent.indexOf("MSIE ") > 0 || navigator.userAgent.indexOf("Trident") > 0 || navigator.userAgent.indexOf("Edge") > 0){
 					$("#rightArrow g,#leftArrow g").removeAttr("filter"); // this filter along with gradient, do not work well in IE11
@@ -75,10 +76,12 @@
 				hiddenElems.each(function(index, item){
 					$(item).removeAttr("display");//.delay(120 * (index + 1)).fadeIn(500);
 				});
+
 				hiddenElems.not("#SpeciesNumberGraph,#NumberByPartyHoursGraph,#ReportingCountsGraph,#ReportingObserversGraph").each(function(index, item){
 					$(item).delay(150 * (index)).animate({"opacity" : 1}, 600);
 				});
-		   	,20);
+
+			}, 20);
 
 
 
