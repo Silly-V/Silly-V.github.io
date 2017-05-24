@@ -81,7 +81,7 @@
 					$(item).delay(150 * (index)).animate({"opacity" : 1}, 600);
 				});
 
-			}, 20);
+			}, 100);
 
 
 
