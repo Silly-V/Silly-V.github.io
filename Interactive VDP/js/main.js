@@ -31,7 +31,7 @@
 		}
 	};
 
-	$(document).ready(function(){
+	$("#root").ready(function(){
 
 		setTimeout(function(){
 
